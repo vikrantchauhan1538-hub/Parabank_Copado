@@ -40,7 +40,7 @@ TS-01: Successful User Registration
     ClickText          REGISTER                    anchor=Confirm:
 
     VerifyText         Your account was created successfully.
-    ClickText          LogOut
+    ClickText          Log Out
 
 TS-02: Password Mismatch Negative Test
     [Documentation]     Verify error when Password and Confirm Password do not match.
