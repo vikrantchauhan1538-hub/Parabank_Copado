@@ -1,0 +1,44 @@
+*** Settings ***
+Documentation          ParaBank Automation - Positive Registration Test Case (TS-01)
+Library                QWeb
+Suite Setup            OpenBrowser                 about:blank             chrome
+Suite Teardown         CloseAllBrowsers
+
+*** Variables ***
+${BANK_URL}            https://parabank.parasoft.com/parabank/index.htm
+
+*** Test Cases ***
+TS-01: Successful User Registration
+    [Documentation]    Verify that a new user can register successfully with unique credentials.
+    [Tags]             Smoke                       Positive
+
+   
+    GoTo               ${BANK_URL}
+
+    ClickText          Register
+    VerifyText         Signing up is easy!
+
+    TypeText           First Name                  Vikrant 2026
+    TypeText           Last Name                   Chauhan
+    TypeText           Address                     Noida Sector 62
+    Sleep              1s
+
+    TypeText           City                        Noida
+    TypeText           State                       Uttar Pradesh
+    TypeText           Zip Code                    201301
+    Sleep              1s
+
+    TypeText           Phone #                     9876543210
+    TypeText           SSN                         SSN-2026
+    Sleep              1s
+
+    TypeText           Username                    vikrant_automate_001    anchor=SSN
+    TypeText           Password                    SecurePass@2026         anchor=Confirm:
+    TypeText           Confirm                     SecurePass@2026
+
+    Sleep              3s
+    ClickText          REGISTER                    anchor=Confirm:
+
+    VerifyText         Your account was created successfully.
+
+  
