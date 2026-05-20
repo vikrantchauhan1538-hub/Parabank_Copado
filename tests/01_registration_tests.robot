@@ -40,5 +40,24 @@ TS-01: Successful User Registration
     ClickText          REGISTER                    anchor=Confirm:
 
     VerifyText         Your account was created successfully.
+    ClickText          LogOut
+
+TS-02: Password Mismatch Negative Test
+    [Documentation]     Verify error when Password and Confirm Password do not match.
+    [Tags]              Negative
+    ClickText           Register
+    TypeText            Username                    vikrant_mismatch        anchor=SSN
+    TypeText            Password                    SecurePass@2026         anchor=Confirm:
+    TypeText            Confirm                     WrongPass@2026          
+    ClickText           REGISTER                    anchor=Confirm:
+    VerifyText          Passwords did not match.
+
+TS-03: Empty Mandatory Fields Negative Test
+    [Documentation]     Verify errors when mandatory fields are left blank.
+    [Tags]              Negative
+    ClickText           Register
+    ClickText           REGISTER                    anchor=Confirm:
+    VerifyText          First name is required.
+    VerifyText          Last name is required.
 
   
