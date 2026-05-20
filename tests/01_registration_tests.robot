@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation          ParaBank Automation - Positive Registration Test Case (TS-01)
 Library                QWeb
-Suite Setup            OpenBrowser                 about:blank             chrome
-Suite Teardown         CloseAllBrowsers
+Suite Setup             Open Browser    https://parabank.parasoft.com/parabank/index.htm    chrome
+Suite Teardown          Close Browser
 
 *** Variables ***
 ${BANK_URL}            https://parabank.parasoft.com/parabank/index.htm
