@@ -36,8 +36,8 @@ TS-08: Login Fails with Non-Existing Username
 
 TS-09: Login Fails with Empty Username and Password
     [Documentation]     Verify error handling when login fields are left blank.
-    TypeText           username
-    TypeText           password
+    TypeText           username    ""
+    TypeText           password    ""
     ClickText           Log In                      anchor=password
     VerifyText          Please enter a username and password.
 
