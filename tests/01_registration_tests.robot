@@ -32,7 +32,7 @@ TS-01: Successful User Registration
     TypeText           SSN                         SSN-2026
     Sleep              1s
 
-    TypeText           Username                    vikrant_automate_1001    anchor=SSN
+    TypeText           Username                    vikrant_automate_2000    anchor=SSN
     TypeText           Password                    SecurePass@2026         anchor=Confirm:
     TypeText           Confirm                     SecurePass@2026
 
