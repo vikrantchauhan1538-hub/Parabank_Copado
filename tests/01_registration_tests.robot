@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation          ParaBank Automation - Positive Registration Test Case (TS-01)
 Library                QWeb
-Suite Setup             Open Browser    https://parabank.parasoft.com/parabank/index.htm    chrome
-Suite Teardown          Close Browser
+Suite Setup            Open Browser                https://parabank.parasoft.com/parabank/index.htm    chrome
+Suite Teardown         Close Browser
 
 *** Variables ***
 ${BANK_URL}            https://parabank.parasoft.com/parabank/index.htm
@@ -12,7 +12,7 @@ TS-01: Successful User Registration
     [Documentation]    Verify that a new user can register successfully with unique credentials.
     [Tags]             Smoke                       Positive
 
-   
+
     GoTo               ${BANK_URL}
 
     ClickText          Register
@@ -32,32 +32,31 @@ TS-01: Successful User Registration
     TypeText           SSN                         SSN-2026
     Sleep              1s
 
-    TypeText           Username                    vikrant_automate_3031 anchor=SSN
-    TypeText           Password                    SecurePass@2026         anchor=Confirm:
+    TypeText           Username                    vikrant_automate_3031       anchor=SSN
+    TypeText           Password                    SecurePass@2026             anchor=Confirm:
     TypeText           Confirm                     SecurePass@2026
 
     Sleep              3s
     ClickText          REGISTER                    anchor=Confirm:
 
-    #VerifyText         "Your account was created successfully. You are now logged in."
-    #ClickText          Log Out
+    #VerifyText        "Your account was created successfully. You are now logged in."
+    #ClickText         Log Out
 
 TS-02: Password Mismatch Negative Test
-    [Documentation]     Verify error when Password and Confirm Password do not match.
-    [Tags]              Negative
-    ClickText           Register
-    TypeText            Username                    vikrant_mismatch        anchor=SSN
-    TypeText            Password                    SecurePass@2026         anchor=Confirm:
-    TypeText            Confirm                     WrongPass@2026          
-    ClickText           REGISTER                    anchor=Confirm:
-    VerifyText          Passwords did not match.
+    [Documentation]    Verify error when Password and Confirm Password do not match.
+    [Tags]             Negative
+    ClickText          Register
+    TypeText           Username                    vikrant_mismatch            anchor=SSN
+    TypeText           Password                    SecurePass@2026             anchor=Confirm:
+    TypeText           Confirm                     WrongPass@2026
+    ClickText          REGISTER                    anchor=Confirm:
+    VerifyText         Passwords did not match.
 
 TS-03: Empty Mandatory Fields Negative Test
-    [Documentation]     Verify errors when mandatory fields are left blank.
-    [Tags]              Negative
-    ClickText           Register
-    ClickText           REGISTER                    anchor=Confirm:
-    VerifyText          First name is required.
-    VerifyText          Last name is required.
+    [Documentation]    Verify errors when mandatory fields are left blank.
+    [Tags]             Negative
+    ClickText          Register
+    ClickText          REGISTER                    anchor=Confirm:
+    VerifyText         First name is required.
+    VerifyText         Last name is required.
 
-  
