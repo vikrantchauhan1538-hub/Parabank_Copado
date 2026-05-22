@@ -6,7 +6,8 @@ Suite Teardown                  Close Browser
 
 *** Variables ***
 ${BANK_URL}                     https://parabank.parasoft.com/parabank/index.htm
-${VALID_USER}                   vikrant_automate_3032        ${VALID_PASS}                   SecurePass@2026
+${VALID_USER}                   vikrant_automate_3089
+${VALID_PASS}                   SecurePass@2026
 
 
 *** Keywords ***
