@@ -18,7 +18,7 @@ TS-01: Successful User Registration
     ClickText          Register
     VerifyText         Signing up is easy!
 
-    TypeText           First Name                  Vikrant 3000
+    TypeText           First Name                  Vikrant 3011
     TypeText           Last Name                   Chauhan
     TypeText           Address                     Noida Sector 62
     Sleep              1s
@@ -32,7 +32,7 @@ TS-01: Successful User Registration
     TypeText           SSN                         SSN-2026
     Sleep              1s
 
-    TypeText           Username                    vikrant_automate_3010  anchor=SSN
+    TypeText           Username                    vikrant_automate_3011  anchor=SSN
     TypeText           Password                    SecurePass@2026         anchor=Confirm:
     TypeText           Confirm                     SecurePass@2026
 
