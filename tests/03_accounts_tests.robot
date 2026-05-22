@@ -35,3 +35,9 @@ TS_10: successfully created Open New Account
     ClickButton                 OPEN NEW ACCOUNT            anchor=LOG OUT
     VerifyText          Congratulations, your new account is now open.
     VerifyText          Your new account number:
+
+TS_11: Verfiy Account number : 
+    [Documentation]    Verify functionality where Account number should be created.
+    [Tags]             positive
+    Click element      nenewAccountId
+    VerifyText         Account Details
