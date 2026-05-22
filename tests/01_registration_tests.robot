@@ -32,14 +32,14 @@ TS-01: Successful User Registration
     TypeText           SSN                         SSN-2026
     Sleep              1s
 
-    TypeText           Username                    vikrant_automate_2005   anchor=SSN
+    TypeText           Username                    vikrant_automate_2009  anchor=SSN
     TypeText           Password                    SecurePass@2026         anchor=Confirm:
     TypeText           Confirm                     SecurePass@2026
 
     Sleep              3s
     ClickText          REGISTER                    anchor=Confirm:
 
-    VerifyText         Your account was created successfully.
+    VerifyText         "Account Opened!"
     ClickText          Log Out
 
 TS-02: Password Mismatch Negative Test
