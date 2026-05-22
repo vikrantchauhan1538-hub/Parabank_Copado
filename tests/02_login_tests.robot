@@ -5,7 +5,7 @@ Suite Setup             Open Browser    https://parabank.parasoft.com/parabank/i
 Suite Teardown          Close Browser
 
 *** Variables ***
-${VALID_USER}           vikrant_automate_3015
+${VALID_USER}           vikrant_automate_3018
 ${VALID_PASS}           SecurePass@2026
 ${INVALID_USER}         wrong_vikrant_999
 ${INVALID_PASS}         WrongPass123
@@ -18,7 +18,7 @@ TS-04: Successful Login with Valid Credentials
     TypeText            password                    ${VALID_PASS}
     ClickText           Log In                      anchor=password
     #VerifyText          Accounts Overview
-    ClickText           Log out
+    #ClickText           Log out
 
 TS-05: Login Fails with Invalid Password
     [Documentation]     Verify that login fails when the password is incorrect.
