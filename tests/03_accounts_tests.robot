@@ -34,9 +34,9 @@ TS_10: successfully created Open New Account
     ClickText          Open New Account
     
 
-    DropDownText       What type of Account would you like to open?    SAVINGS
-    
-    ClickButton        Open New Account
+    DropDown    type    SAVINGS
+    DropDown    type    CHECKING
+    ClickText    Open New Account        anchor=Log Out
     VerifyText         Account Opened!
     VerifyText         Congratulations, your new account is now open.
     VerifyText         Your new account number:
@@ -46,3 +46,12 @@ TS_11: Verify Account number
     [Tags]             positive
     ClickText          Your new account number:        anchor=1
     VerifyText         Account Details
+    DropDown    type    SAVINGS
+    DropDown    type    CHECKING
+    ClickText    Open New Account
+    ClickText    newAccountId                        
+    DropDown    month    January
+    DropDown    transactionType    Credit
+    ClickText    Go
+    ClickText    Accounts Overview
+    
