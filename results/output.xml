@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.15 on linux)" generated="2026-05-22T07:40:37.009135" rpa="false" schemaversion="5">
+<suite id="s1" name="Parabank Copado" source="/home/executor/execution/Parabank_Copado">
+<suite id="s1-s1" name="Tests" source="/home/executor/execution/Parabank_Copado/tests">
+<suite id="s1-s1-s1" name="01 Registration Tests" source="/home/executor/execution/Parabank_Copado/tests/01_registration_tests.robot">
+<kw name="Open Browser" owner="QWeb" type="SETUP">
+<msg time="2026-05-22T07:40:37.665355" level="INFO">QWeb version number: 3.8.0</msg>
+<msg time="2026-05-22T07:40:38.256294" level="INFO">Browser: chrome</msg>
+<msg time="2026-05-22T07:40:38.256391" level="INFO">Browser version: 148.0.7778.97</msg>
+<msg time="2026-05-22T07:40:38.256423" level="INFO">Chromedriver version: 148.0.7778.97 (6b3fa66a923a9442c8ab0bc71b4b41ff24528d3b-refs/branch-heads/7778@{#1905})</msg>
+<arg>https://parabank.parasoft.com/parabank/index.htm</arg>
+<arg>chrome</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Open new browser to given url.</doc>
+<status status="PASS" start="2026-05-22T07:40:37.664344" elapsed="1.822561"/>
+</kw>
+<test id="s1-s1-s1-t1" name="TS-01: Successful User Registration" line="11">
+<kw name="Go To" owner="QWeb">
+<arg>${BANK_URL}</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Switch current page to given url.</doc>
+<status status="PASS" start="2026-05-22T07:40:39.487756" elapsed="0.373967"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>Register</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:39.862003" elapsed="0.468472"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Signing up is easy!</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2026-05-22T07:40:40.330784" elapsed="0.260404"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>First Name</arg>
+<arg>Vikrant 3011</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:40.591444" elapsed="0.173081"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Last Name</arg>
+<arg>Chauhan</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:40.764814" elapsed="0.140525"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Address</arg>
+<arg>Noida Sector 62</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:40.905644" elapsed="0.144924"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-22T07:40:42.051334" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-22T07:40:41.050861" elapsed="1.000667"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>City</arg>
+<arg>Noida</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:42.051768" elapsed="0.130557"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>State</arg>
+<arg>Uttar Pradesh</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:42.182557" elapsed="0.129163"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Zip Code</arg>
+<arg>201301</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:42.311962" elapsed="0.125207"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-22T07:40:43.437876" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-22T07:40:42.437400" elapsed="1.000651"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Phone #</arg>
+<arg>9876543210</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:43.438257" elapsed="0.129979"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>SSN</arg>
+<arg>SSN-2026</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:43.568454" elapsed="0.122576"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-22T07:40:44.691656" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-22T07:40:43.691240" elapsed="1.000599"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Username</arg>
+<arg>vikrant_automate_3018</arg>
+<arg>anchor=SSN</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:44.692075" elapsed="0.208192"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Password</arg>
+<arg>SecurePass@2026</arg>
+<arg>anchor=Confirm:</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:44.900492" elapsed="0.170899"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Confirm</arg>
+<arg>SecurePass@2026</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:45.071609" elapsed="0.129641"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-05-22T07:40:48.201939" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-05-22T07:40:45.201473" elapsed="3.000636"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>REGISTER</arg>
+<arg>anchor=Confirm:</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:48.202309" elapsed="0.337477"/>
+</kw>
+<doc>Verify that a new user can register successfully with unique credentials.</doc>
+<tag>Positive</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2026-05-22T07:40:39.487154" elapsed="9.052872"/>
+</test>
+<test id="s1-s1-s1-t2" name="TS-02: Password Mismatch Negative Test" line="45">
+<kw name="Click Text" owner="QWeb">
+<arg>Register</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:48.540852" elapsed="0.459055"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Username</arg>
+<arg>vikrant_mismatch</arg>
+<arg>anchor=SSN</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:49.000151" elapsed="0.417850"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Password</arg>
+<arg>SecurePass@2026</arg>
+<arg>anchor=Confirm:</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:49.418241" elapsed="0.155924"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>Confirm</arg>
+<arg>WrongPass@2026</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:49.574384" elapsed="0.115926"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>REGISTER</arg>
+<arg>anchor=Confirm:</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:49.690541" elapsed="0.300943"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Passwords did not match.</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2026-05-22T07:40:49.991743" elapsed="0.269909"/>
+</kw>
+<doc>Verify error when Password and Confirm Password do not match.</doc>
+<tag>Negative</tag>
+<status status="PASS" start="2026-05-22T07:40:48.540419" elapsed="1.721445"/>
+</test>
+<test id="s1-s1-s1-t3" name="TS-03: Empty Mandatory Fields Negative Test" line="55">
+<kw name="Click Text" owner="QWeb">
+<arg>Register</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:50.262592" elapsed="0.239999"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>REGISTER</arg>
+<arg>anchor=Confirm:</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:50.502911" elapsed="0.532033"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>First name is required.</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2026-05-22T07:40:51.035190" elapsed="0.262957"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Last name is required.</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2026-05-22T07:40:51.298377" elapsed="0.041166"/>
+</kw>
+<doc>Verify errors when mandatory fields are left blank.</doc>
+<tag>Negative</tag>
+<status status="PASS" start="2026-05-22T07:40:50.262209" elapsed="1.077555"/>
+</test>
+<kw name="Close Browser" owner="QWeb" type="TEARDOWN">
+<msg time="2026-05-22T07:40:51.341022" level="INFO">${BROWSER_REUSE} = False</msg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Close current browser.</doc>
+<status status="PASS" start="2026-05-22T07:40:51.340396" elapsed="0.061946"/>
+</kw>
+<doc>ParaBank Automation - Positive Registration Test Case (TS-01)</doc>
+<status status="PASS" start="2026-05-22T07:40:37.029929" elapsed="14.372522"/>
+</suite>
+<suite id="s1-s1-s2" name="02 Login Tests" source="/home/executor/execution/Parabank_Copado/tests/02_login_tests.robot">
+<kw name="Open Browser" owner="QWeb" type="SETUP">
+<msg time="2026-05-22T07:40:51.407136" level="INFO">QWeb version number: 3.8.0</msg>
+<msg time="2026-05-22T07:40:51.734664" level="INFO">Browser: chrome</msg>
+<msg time="2026-05-22T07:40:51.734801" level="INFO">Browser version: 148.0.7778.97</msg>
+<msg time="2026-05-22T07:40:51.734833" level="INFO">Chromedriver version: 148.0.7778.97 (6b3fa66a923a9442c8ab0bc71b4b41ff24528d3b-refs/branch-heads/7778@{#1905})</msg>
+<arg>https://parabank.parasoft.com/parabank/index.htm</arg>
+<arg>chrome</arg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Open new browser to given url.</doc>
+<status status="PASS" start="2026-05-22T07:40:51.404923" elapsed="1.214420"/>
+</kw>
+<test id="s1-s1-s2-t1" name="TS-04: Successful Login with Valid Credentials" line="15">
+<kw name="Type Text" owner="QWeb">
+<arg>username</arg>
+<arg>${VALID_USER}</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:52.620044" elapsed="0.277431"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>password</arg>
+<arg>${VALID_PASS}</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:52.897732" elapsed="0.047434"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>Log In</arg>
+<arg>anchor=password</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:52.945387" elapsed="0.317190"/>
+</kw>
+<doc>Verify that a registered user can log in successfully.</doc>
+<status status="PASS" start="2026-05-22T07:40:52.619512" elapsed="0.643313"/>
+</test>
+<test id="s1-s1-s2-t2" name="TS-05: Login Fails with Invalid Password" line="23">
+<kw name="Type Text" owner="QWeb">
+<arg>username</arg>
+<arg>${VALID_USER}</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:53.263551" elapsed="0.257285"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>password</arg>
+<arg>${INVALID_PASS}</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:53.521065" elapsed="0.047412"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>Log In</arg>
+<arg>anchor=password</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:53.568733" elapsed="0.245297"/>
+</kw>
+<doc>Verify that login fails when the password is incorrect.</doc>
+<status status="PASS" start="2026-05-22T07:40:53.263179" elapsed="0.551074"/>
+</test>
+<test id="s1-s1-s2-t3" name="TS-06: Login Fails with Non-Existing Username" line="30">
+<kw name="Type Text" owner="QWeb">
+<arg>username</arg>
+<arg>${INVALID_USER}</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:53.815017" elapsed="0.271405"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>password</arg>
+<arg>${VALID_PASS}</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:54.086648" elapsed="0.052989"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>Log In</arg>
+<arg>anchor=password</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:54.139899" elapsed="0.046199"/>
+</kw>
+<doc>Verify that an unregistered user cannot log in.</doc>
+<status status="PASS" start="2026-05-22T07:40:53.814605" elapsed="0.371717"/>
+</test>
+<test id="s1-s1-s2-t4" name="TS-07: Login Fails with Empty Username and Password" line="37">
+<kw name="Click Text" owner="QWeb">
+<arg>Log In</arg>
+<arg>anchor=password</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:54.187063" elapsed="0.571958"/>
+</kw>
+<kw name="Verify Text" owner="QWeb">
+<arg>Please enter a username and password.</arg>
+<tag>Text</tag>
+<tag>Verification</tag>
+<doc>Verify page contains given text.</doc>
+<status status="PASS" start="2026-05-22T07:40:54.759248" elapsed="0.345690"/>
+</kw>
+<doc>Verify error handling when login fields are left blank.</doc>
+<status status="PASS" start="2026-05-22T07:40:54.186668" elapsed="0.918477"/>
+</test>
+<test id="s1-s1-s2-t5" name="TS-08: Successful Logout Functionality" line="42">
+<kw name="Type Text" owner="QWeb">
+<arg>username</arg>
+<arg>${VALID_USER}</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:55.105887" elapsed="0.260881"/>
+</kw>
+<kw name="Type Text" owner="QWeb">
+<arg>password</arg>
+<arg>${VALID_PASS}</arg>
+<tag>Input</tag>
+<tag>Interaction</tag>
+<doc>Type given text to a text field.</doc>
+<status status="PASS" start="2026-05-22T07:40:55.366986" elapsed="0.045627"/>
+</kw>
+<kw name="Click Text" owner="QWeb">
+<arg>Log In</arg>
+<arg>anchor=password</arg>
+<tag>Interaction</tag>
+<tag>Text</tag>
+<doc>Click text on web page.</doc>
+<status status="PASS" start="2026-05-22T07:40:55.412851" elapsed="0.043662"/>
+</kw>
+<doc>Verify that a user can log out successfully.</doc>
+<status status="PASS" start="2026-05-22T07:40:55.105498" elapsed="0.351258"/>
+</test>
+<kw name="Close Browser" owner="QWeb" type="TEARDOWN">
+<msg time="2026-05-22T07:40:55.457620" level="INFO">${BROWSER_REUSE} = False</msg>
+<tag>Browser</tag>
+<tag>Interaction</tag>
+<doc>Close current browser.</doc>
+<status status="PASS" start="2026-05-22T07:40:55.457299" elapsed="0.060676"/>
+</kw>
+<doc>ParaBank Automation - Login &amp; Session Management Suite</doc>
+<status status="PASS" start="2026-05-22T07:40:51.403029" elapsed="4.115049"/>
+</suite>
+<status status="PASS" start="2026-05-22T07:40:37.029157" elapsed="18.489489"/>
+</suite>
+<status status="PASS" start="2026-05-22T07:40:37.015846" elapsed="18.503098"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Negative</stat>
+<stat pass="1" fail="0" skip="0">Positive</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="Parabank Copado" id="s1" pass="8" fail="0" skip="0">Parabank Copado</stat>
+<stat name="Tests" id="s1-s1" pass="8" fail="0" skip="0">Parabank Copado.Tests</stat>
+<stat name="01 Registration Tests" id="s1-s1-s1" pass="3" fail="0" skip="0">Parabank Copado.Tests.01 Registration Tests</stat>
+<stat name="02 Login Tests" id="s1-s1-s2" pass="5" fail="0" skip="0">Parabank Copado.Tests.02 Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
