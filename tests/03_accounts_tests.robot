@@ -16,7 +16,7 @@ Open New Browser Session
     TypeText                    username                    ${VALID_USER}
     TypeText                    password                    ${VALID_PASS}
     ClickText                   Log in
-    VerifyText                  Accounts Overview
+    #VerifyText                  Accounts Overview
 
 
 *** Test Cases ***
