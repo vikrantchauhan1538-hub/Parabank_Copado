@@ -5,7 +5,7 @@ Suite Setup             Open Browser    https://parabank.parasoft.com/parabank/i
 Suite Teardown          Close Browser
 
 *** Variables ***
-${VALID_USER}           vikrant_automate_3012
+${VALID_USER}           vikrant_automate_3013
 ${VALID_PASS}           SecurePass@2026
 ${INVALID_USER}         wrong_vikrant_999
 ${INVALID_PASS}         WrongPass123
