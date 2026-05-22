@@ -39,5 +39,5 @@ TS_10: successfully created Open New Account
 TS_11: Verfiy Account number : 
     [Documentation]    Verify functionality where Account number should be created.
     [Tags]             positive
-    Click element      nenewAccountId
+    ClickCell          nenewAccountId
     VerifyText         Account Details
