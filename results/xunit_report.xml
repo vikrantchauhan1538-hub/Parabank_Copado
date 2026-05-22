@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Parabank Copado" tests="8" errors="0" failures="0" skipped="0" time="18.503" timestamp="2026-05-22T07:40:37.015846">
+<testsuite name="Tests" tests="8" errors="0" failures="0" skipped="0" time="18.489" timestamp="2026-05-22T07:40:37.029157">
+<testsuite name="01 Registration Tests" tests="3" errors="0" failures="0" skipped="0" time="14.373" timestamp="2026-05-22T07:40:37.029929">
+<testcase classname="Parabank Copado.Tests.01 Registration Tests" name="TS-01: Successful User Registration" time="9.053">
+</testcase>
+<testcase classname="Parabank Copado.Tests.01 Registration Tests" name="TS-02: Password Mismatch Negative Test" time="1.721">
+</testcase>
+<testcase classname="Parabank Copado.Tests.01 Registration Tests" name="TS-03: Empty Mandatory Fields Negative Test" time="1.078">
+</testcase>
+<properties>
+<property name="Documentation" value="ParaBank Automation - Positive Registration Test Case (TS-01)"/>
+</properties>
+</testsuite>
+<testsuite name="02 Login Tests" tests="5" errors="0" failures="0" skipped="0" time="4.115" timestamp="2026-05-22T07:40:51.403029">
+<testcase classname="Parabank Copado.Tests.02 Login Tests" name="TS-04: Successful Login with Valid Credentials" time="0.643">
+</testcase>
+<testcase classname="Parabank Copado.Tests.02 Login Tests" name="TS-05: Login Fails with Invalid Password" time="0.551">
+</testcase>
+<testcase classname="Parabank Copado.Tests.02 Login Tests" name="TS-06: Login Fails with Non-Existing Username" time="0.372">
+</testcase>
+<testcase classname="Parabank Copado.Tests.02 Login Tests" name="TS-07: Login Fails with Empty Username and Password" time="0.918">
+</testcase>
+<testcase classname="Parabank Copado.Tests.02 Login Tests" name="TS-08: Successful Logout Functionality" time="0.351">
+</testcase>
+<properties>
+<property name="Documentation" value="ParaBank Automation - Login &amp; Session Management Suite"/>
+</properties>
+</testsuite>
+</testsuite>
+</testsuite>
