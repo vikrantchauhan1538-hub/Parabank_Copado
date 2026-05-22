@@ -20,24 +20,29 @@ Open New Browser Session
 
 
 *** Test Cases ***
+*** Test Cases ***
 TS_09: Navigate to Open New Account 
-    [Documentation] Verify functionality where user navigate to order new account page
-    [Tags]                      positive
-    ClickText                   Open New Account
-    VerifyText                  Open New Account
-    VerifyText                  What type of Account would you like to open?
+    [Documentation]    Verify functionality where user navigate to order new account page
+    [Tags]             positive
+    ClickText          Open New Account
+    VerifyText         Open New Account
+    VerifyText         What type of Account would you like to open?
 
 TS_10: successfully created Open New Account
-    [Documentation]             Verify functioanlity where Open new Account has been successfully Created
-    [Tags]                      positive
-    DropDown                    type                        SAVINGS
-    DropDown                    type                        CHECKING
-    ClickButton                 OPEN NEW ACCOUNT            anchor=LOG OUT
-    VerifyText          Congratulations, your new account is now open.
-    VerifyText          Your new account number:
+    [Documentation]    Verify functionality where Open new Account has been successfully Created
+    [Tags]             positive
+    ClickText          Open New Account
+    
 
-TS_11: Verfiy Account number : 
+    DropDownText       What type of Account would you like to open?    SAVINGS
+    
+    ClickButton        Open New Account
+    VerifyText         Account Opened!
+    VerifyText         Congratulations, your new account is now open.
+    VerifyText         Your new account number:
+
+TS_11: Verify Account number
     [Documentation]    Verify functionality where Account number should be created.
     [Tags]             positive
-    ClickCell          nenewAccountId
+    ClickText          Your new account number:        anchor=1
     VerifyText         Account Details
