@@ -9,7 +9,7 @@ Suite Teardown         Close Browser
 #${URL}                https://automationintesting.online
 
 *** Test Cases ***
-TS_012:  Open the site and verify the title
+TS_012: Open the site and verify the title
     [Documentation]    Verify functionality where user navigate to Website and verify title
     [Tags]             smoke             positive
     #GOTO              ${{URL}}
