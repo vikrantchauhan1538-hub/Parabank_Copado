@@ -12,12 +12,14 @@ TS_014: Count and Verify Room Cards Are Present
     [Tags]                sanity           positive
     Sleep              3s
     
-    # 2. 🚀 जादुई कीवर्ड: नीचे 'Rooms' टेक्स्ट तक स्क्रॉल करें ताकि सारे रूम कार्ड्स लोड हो जाएं
+    # 2. उस नीले बटन पर क्लिक करें जो रास्ते में आ रहा है
+    ClickText          Check Availability
+    Sleep              2s
+    
+    # 3. अब नीचे स्क्रॉल करें जहाँ असली रूम्स छिपे हैं
     ScrollTo           Rooms
     Sleep              2s
     
-    # 3. अब एडवांस XPath लोकेटर से छिपे हुए बटनों को गिनें
-    ${room_count}=     GetElementCount    xpath\=//button[contains(text(),'Book this room')]
-    
-    # 4. इसे कंसोल में प्रिंट करें
+    # 4. अब बटन काउंट करें (बिना XPath के सिंपल तरीके से)
+    ${room_count}=     GetElementCount    Book this room
     LogToConsole       Room Count is: ${room_count}
