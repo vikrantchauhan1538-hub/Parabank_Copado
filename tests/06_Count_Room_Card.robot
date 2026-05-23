@@ -10,10 +10,7 @@ Suite Teardown            Close Browser
 TS_014: Count and Verify Room Cards Are Present
     [Documentation]       Verify funciotnality to count room
     [Tags]                sanity           positive
-    Verifytext            Rooms
-    Clicktext          Rooms
-    
-    # 3. 2 सेकंड का वेट दें ताकि सारे रूम कार्ड्स और बटन पूरी तरह लोड हो जाएं
+    GOTO                  https://automationintesting.online/#rooms
     Sleep              2s
     
     # 4. अब सही बटन का काउंट निकालें
