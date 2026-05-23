@@ -20,6 +20,6 @@ TS_014: Count and Verify Room Cards Are Present
     ScrollTo           Rooms
     Sleep              2s
     
-    # 4. 🚀 असली सुधार: बटन का नाम 'Book now' है (जैसा लाइव स्क्रीन पर दिख रहा है)
-    ${room_count}=     GetElementCount    Book now
+    # 4. 🔥 अंतिम सुधार: बिना किसी टेक्स्ट पर निर्भर रहे, सीधे बटन क्लास को टारगेट करें
+    ${room_count}=     GetElementCount    xpath\=//button[contains(@class, 'btn-primary') and contains(text(), 'Book')]
     LogToConsole       Room Count is: ${room_count}
