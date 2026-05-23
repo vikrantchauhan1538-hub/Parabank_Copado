@@ -12,6 +12,7 @@ TS_014: Count and Verify Room Cards Are Present
     [Tags]                sanity           positive
     Verifytext            Rooms
     Clicktext             Rooms
+    Sleep                 2s
     ${room_count}=        GetElementCount    Book this room
     LogToConsole          Room Count is: ${room_count}
                     
