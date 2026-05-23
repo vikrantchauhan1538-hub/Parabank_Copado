@@ -12,5 +12,5 @@ TS_014: Count and Verify Room Cards Are Present
     [Tags]                sanity           positive
    Sleep                 3s
 
-    ${room_count}=        GetElementCount    xpath=//div[@class='row room']
+    ${room_count}=        GetElementCount    xpath://div[@class='row room']
     LogToConsole          Room Count is: ${room_count}
