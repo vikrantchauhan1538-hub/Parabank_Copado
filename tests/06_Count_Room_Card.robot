@@ -13,7 +13,7 @@ TS_014: Count and Verify Room Cards Are Present
   Sleep              3s
     
     # 2. बिना किसी झंझट के सीधे शुद्ध XPath (बिना बैकस्लैश के)
-    ${room_count}=     GetElementCount    xpath=//button[text()='Book now']
+    ${room_count}=     GetElementCount    //*[@id="rooms"]/div/div[2]
     
     # 3. काउंट प्रिंट करें
     LogToConsole       Room Count is: ${room_count}
