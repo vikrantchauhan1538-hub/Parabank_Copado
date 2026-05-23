@@ -13,4 +13,5 @@ TS_014: Count and Verify Room Cards Are Present
     Verifytext            Rooms
     Clicktext             Rooms
     ${room_count}=     GetElementCount    Book this room
+   Log                 Room Count: ${room_count}
     
