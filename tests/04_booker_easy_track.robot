@@ -14,4 +14,4 @@ TS_012:  Open the site and verify the title
     [Tags]             smoke            positive
     #GOTO              ${{URL}}
     sleep              3s
-    VerifyText         "Restful-booker-platform demo"
+    VerifyTitle         "Restful-booker-platform demo"
