@@ -12,5 +12,5 @@ TS_014: Count and Verify Room Cards Are Present
     [Tags]                sanity           positive
     Verifytext            Rooms
     Clicktext             Rooms
-    GetElementCount    Book now
+    ${room_count}=     GetElementCount    Book this room
     
