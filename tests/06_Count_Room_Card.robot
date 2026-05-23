@@ -16,10 +16,10 @@ TS_014: Count and Verify Room Cards Are Present
     ClickText          Check Availability
     Sleep              2s
     
-    # 3. अब नीचे स्क्रॉल करें जहाँ असली रूम्स छिपे हैं
+    # 3. नीचे स्क्रॉल करें जहाँ असली रूम्स हैं
     ScrollTo           Rooms
     Sleep              2s
     
-    # 4. अब बटन काउंट करें (बिना XPath के सिंपल तरीके से)
-    ${room_count}=     GetElementCount    Book this room
+    # 4. 🚀 असली सुधार: बटन का नाम 'Book now' है (जैसा लाइव स्क्रीन पर दिख रहा है)
+    ${room_count}=     GetElementCount    Book now
     LogToConsole       Room Count is: ${room_count}
